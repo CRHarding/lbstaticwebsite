@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport content="width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>Fun with JS!</title>
+  </head>
+  <body>
+    <form class="card-content" id="create-playlist-form">
+      <label>Playlist Name
+        <input type="text" required class="validated-field" id="playlist-name" placeholder="smooth-jamz" autofocus>
+      </label>
+      <label>Tags
+        <input type="text" id="tags" class="tags" placeholder="tag1,tag2" data-tip="Must be a comma separated list of tags.">
+      </label>
+      <input type="submit" id="create" value="Create">
+    </form>
+    <div class="card">
+      <h2>Add Song to Playlist</h2>
+      <form class="card-content" id="add-song-form">
+          <p class="form-field">
+            <label>Album Asin
+              <input type="text" required class="validated-field" id="album-asin" placeholder="B00000000" autofocus>
+            </label>
+          </p>
+          <p class="form-field">
+            <label>Track Name
+              <input type="text" id="track-name">
+            </label>
+          </p>
+          <p class="form-field">
+            <label>Track Number
+              <input type="number" id="track-number">
+            </label>
+          </p>
+          <input type="submit" id="add-song">
+      </form>
+    </div>
+  </body>
+</html>
